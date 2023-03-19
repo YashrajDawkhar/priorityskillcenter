@@ -1,0 +1,38 @@
+.contact{
+    display:flex;
+    background: #f2f2f2;
+    justify-content: space-around;
+   
+
+}
+
+.container img{
+    width:500px;
+    height:500px;
+}
+
+.box{
+     border-radius: 20px;;
+     background: #ffff;
+     padding:30px;
+     margin:20px;
+}
+.box h2{
+    text-align: center;
+    padding: 10px;
+    border-bottom:3px solid #251F55;
+}
+.content{
+    width:300px;
+    padding:10px;
+    margin:10px;
+}
+
+.btn{
+    width:320px;
+    background: #251F55;
+    color:#ffff;
+    padding:10px;
+    margin:10px;
+    border:1px solid #251F55
+}
