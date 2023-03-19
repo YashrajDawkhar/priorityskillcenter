@@ -100,19 +100,30 @@
 .container{
     display:flex;
     justify-content: space-evenly;
-    padding: 50px;;
+    padding: 50px;
 }
 
 .container .item{
     width:300px;
-    text-align: justify;
+    text-align: center;
 }
-.container .item h3{
+.container .item .bi{
     font-size: 30px;
     color: #FCBF49;
     text-transform: capitalize;
     text-align: center;
     padding:10px;
+}
+
+.container .item h3{
+    font-size: 30px;
+    color: #251F55;
+    text-transform: capitalize;
+    text-align: center;
+    padding:10px;
+}
+.container .item p{
+    text-align: justify;
 }
 
 /* provide section */
@@ -144,6 +155,8 @@
     margin:20px;
 }
 
+
+
 /* reiew section */
 .student h2{
     color: #251F55;
@@ -162,6 +175,15 @@
     border:1px solid #FCBF49;
     margin:30px;
     height:300px;
+}
+.review .box1 .star{
+    align-items: center;
+    margin:20px;
+}
+.review .box1 .star .bi{
+    margin:5px 5px 5px 0px;
+    color:#FCBF49;
+    font-size: 20px;
 }
 .review .box1 .description{
     margin:20px;
