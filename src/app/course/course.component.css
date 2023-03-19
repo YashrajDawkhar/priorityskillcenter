@@ -52,4 +52,11 @@
 
 #desc {
   margin-top: 20px;
+  font-size: 18px;
+  color: #251f55;
+}
+
+img {
+  max-width: 250px;
+  max-height: 250px;
 }

@@ -4,7 +4,7 @@
     <div id="card" *ngFor="let d of data">
 
         <div class="img">
-            <img [src]="getImage(d.img)" >
+            <img [src]="getImage(d.img)">
         </div>
         <div class="detail">
 
@@ -12,13 +12,13 @@
                 {{d.title}}
             </div>
             <div id="desc">
-                {{d.desc}} 
+                {{d.desc}}
             </div>
 
         </div>
         <div class="btn">
 
-            <div id="view">
+            <div id="view" style="cursor: pointer;" routerLink="/detail" [queryParams]="{type:'IT',id:d.id}">
                 View
             </div>
 
