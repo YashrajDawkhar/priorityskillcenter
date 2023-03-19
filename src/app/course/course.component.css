@@ -1,13 +1,16 @@
-.outer{
-    min-height:95vh;
-    display: flex;
-    justify-content: center;
-    background: linear-gradient(180deg, #251F55, #8275DE, #251F55);
+.outer {
+  min-height: 95vh;
+  display: flex;
+  background: linear-gradient(180deg, #251f55, #8275de, #251f55);
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
 }
 
-#card{
-    width:90%;
-    height: 190px;
-    background-color: white;
-    border-radius: 15px;
+#card {
+  width: 80%;
+  height: 290px;
+  background-color: white;
+  border-radius: 15px;
+  margin-bottom:20px;
 }
