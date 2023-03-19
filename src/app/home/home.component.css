@@ -1,0 +1,145 @@
+.home{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(45deg, #375684,#342C77 , #251F55);
+}
+.content {
+    padding:20px;
+}
+.content h1{
+    font-size: 55px;
+    color: #fff;
+    text-transform: capitalize;
+    padding:10px;
+}
+
+.content h2{
+    font-size:25px;
+    padding:10px;
+    color:#FCBF49
+}
+
+.content p{
+    font-size:20px;
+    color:#ffff;
+    padding:10px;
+}
+
+.content .btn{
+    width:150px;
+    height:50px;
+    margin:10px;
+    background-color: #FCBF49;
+    text-transform: uppercase;
+    border-radius: 10px;
+    border:1px solid #342C77
+}
+
+.content .btn:hover{
+    background:#efe772;
+    color:#375684;
+    
+}
+
+
+/* skill section */
+
+.box{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    background:#251F55;
+    width:595px;
+    height:100px;
+    padding:10px 100px;
+    border-radius: 20px;
+    position: absolute;
+    left: 200px;
+    top: 550px;
+}
+
+.box .skill{
+    color:#fff;
+}
+
+.box .skill h2{
+    font-size: 45px;
+    
+}
+
+/* ---------About Us--------- */
+.row{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.about{
+    text-align: center;
+    padding:30px;
+    margin-top:80px;
+}
+.about h2{
+    color: #251F55;
+    font-size: 45px;
+}
+.row .column{
+    padding:20px;
+    margin:10px;
+}
+.row .column p{
+    font-size:20px;
+    text-align: justify;
+
+}
+.row .column img{
+    width:450px;
+
+}
+
+.container{
+    display:flex;
+    justify-content: space-evenly;
+    padding: 50px;;
+}
+
+.container .item{
+    width:300px;
+    text-align: justify;
+}
+.container .item h2{
+    font-size: 30px;
+    color: #FCBF49;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+/* provide section */
+.ProvideUs{
+    background: #251F55;
+    color:#fff;
+    text-align: center;
+    height:550px;
+    padding:10px;
+}
+
+.ProvideUs h2{
+    color: #fff;
+    font-size: 45px;
+    text-transform: capitalize;
+    padding-top:50px;
+}
+
+.ProvideUs .list{
+    width:1000px;
+    margin:100px;
+}
+
+
+.ProvideUs .list p{
+    text-align: left;
+    font-size: 20px;
+    text-transform: capitalize;
+    margin:20px;
+}
+
