@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-image: linear-gradient(45deg, #375684, #342c77, #251f55);
+  background-image: linear-gradient(180deg, #342C77, #262058, #161232);
   padding: 30px;
 
   .content {
@@ -47,7 +47,8 @@
       margin-top: 19px;
 
       #head {
-        font-size: 45px;
+        font-size: 36px;
+        font-weight: 700;
       }
     }
   }
