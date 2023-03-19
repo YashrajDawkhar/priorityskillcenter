@@ -57,7 +57,7 @@
         <h2>WHY SHOULD I LEARN {{data.title | uppercase}} </h2>
 
         <ng-container *ngFor="let i of data.detail?.learn">
-            
+
             <ul>
                 <li>
                     {{i}}
@@ -74,8 +74,31 @@
             COURSE CURRICULUM
         </div>
 
+        <ng-container *ngFor="let i of data?.detail?.curriculum">
+
+            <div class="box">
+                {{i}}
+            </div>
+
+        </ng-container>
 
     </div>
 
+    <div class="faculty">
+
+        <div id="title">
+            Faculty
+        </div>
+
+        <div class="outer-box">
+
+            <div class="box" *ngFor="let i of data?.detail?.faculty">
+                <img [src]="getImage(i.img)" height="200px" width="200px">
+                <div style="position: absolute;bottom: 0;text-align: center;width: 100%;">{{i?.name}}</div>
+            </div>
+
+        </div>
+
+    </div>
 
 </div>
