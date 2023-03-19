@@ -1,0 +1,4 @@
+.outer{
+    min-height:95vh;
+    background: linear-gradient(180deg, rgba(52,45,103,1) 0%, rgba(128,115,195,1) 35%, rgba(46,40,97,1) 100%);
+}

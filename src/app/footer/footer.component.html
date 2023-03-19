@@ -4,12 +4,12 @@
     </div>
     <div class="box2">
         <ul>
-            <li>Home</li>
-            <li>Trending Courses</li>
-            <li>IT Courses</li>
-            <li>CAD Design Courses</li>
-            <li>Languages</li>
-            <li>Contact Us</li>
+            <li routerLink="/home">Home</li>
+            <li routerLink="/course" [queryParams]="{type:'Trending'}">Trending Courses</li>
+            <li routerLink="/course" [queryParams]="{type:'IT'}">IT Courses</li>
+            <li routerLink="/course" [queryParams]="{type:'CAD'}">CAD Design Courses</li>
+            <li routerLink="/course" [queryParams]="{type:'Language'}">Languages</li>
+            <li routerLink="/contact">Contact Us</li>
         </ul>
     </div>
     <div class="box3">
