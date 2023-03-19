@@ -5,7 +5,7 @@ import { ActivatedRoute } from '@angular/router';
 @Component({
   selector: 'app-detail',
   templateUrl: './detail.component.html',
-  styleUrls: ['./detail.component.css']
+  styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent {
 
@@ -13,18 +13,17 @@ export class DetailComponent {
 
   constructor(private backend: BackendService, private activated: ActivatedRoute) {
     activated.queryParams.subscribe((query: any) => {
-
-      console.log(query);
-      
-
       backend.getCourse().subscribe((d: any) => {
         this.data = d[query.type][query.id]
-
         console.log(this.data);
-        
-
       })
     })
+  }
+
+  getImage(img: any):any {
+    if (img) {
+      return `https://docs.google.com/uc?id=${img}`
+    }
   }
 
 }

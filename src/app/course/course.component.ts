@@ -11,12 +11,14 @@ export class CourseComponent {
 
 
   data: any = []
+  type:string =''
 
 
   constructor(private backend: BackendService, private activated: ActivatedRoute) {
     activated.queryParams.subscribe((query: any) => {
       backend.getCourse().subscribe((d: any) => {
         this.data = d[query.type]
+        this.type = query.type
       })
     })
   }
