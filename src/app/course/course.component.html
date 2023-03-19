@@ -1,19 +1,30 @@
 <div class="outer">
 
 
-    <div id="card">
+    <div id="card" *ngFor="let d of data">
 
         <div class="img">
-
+            <img [src]="getImage(d.img)" >
         </div>
         <div class="detail">
 
+            <div id="title">
+                {{d.title}}
+            </div>
+            <div id="desc">
+                {{d.desc}} 
+            </div>
+
         </div>
         <div class="btn">
+
+            <div id="view">
+                View
+            </div>
 
         </div>
 
     </div>
 
- 
+
 </div>

@@ -8,6 +8,7 @@ import { FooterComponent } from './footer/footer.component';
 import { CourseComponent } from './course/course.component';
 import { DetailComponent } from './detail/detail.component';
 import { ContactusComponent } from './contactus/contactus.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { ContactusComponent } from './contactus/contactus.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
