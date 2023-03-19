@@ -1,7 +1,7 @@
 <div class="outer">
 
 
-    <div id="card" *ngFor="let d of data">
+    <div id="card" *ngFor="let d of data;index as i">
 
         <div class="img">
             <img [src]="getImage(d.img)">
@@ -18,7 +18,7 @@
         </div>
         <div class="btn">
 
-            <div id="view" style="cursor: pointer;" routerLink="/detail" [queryParams]="{type:'IT',id:d.id}">
+            <div id="view" style="cursor: pointer;" routerLink="/detail" [queryParams]="{type:'IT',id:i}">
                 View
             </div>
 
