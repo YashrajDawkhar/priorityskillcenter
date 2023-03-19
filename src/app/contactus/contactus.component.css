@@ -1,9 +1,9 @@
 .contact{
-    display:flex;
+    display: flex;
     background: #f2f2f2;
+    height: 90vh;
     justify-content: space-around;
-   
-
+    align-items: center;
 }
 
 .container img{
