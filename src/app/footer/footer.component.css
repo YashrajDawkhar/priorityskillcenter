@@ -1,0 +1,28 @@
+.footer{
+    height:100%;
+    width:100%;
+    background: #13102C;
+    display: flex;
+    justify-content: space-around;
+    color: #ffff;
+    padding:20px 0px;
+}
+
+.box1{
+    font-size: 25px;
+    font-weight: 200;
+    width:80px;
+    text-transform: uppercase;
+    padding:50px 0px;
+    
+}
+
+ul li{
+    list-style: none;
+    padding:10px;
+}
+
+.box2,.box3,.box4{
+    border-left: 1px solid #FCBF49;
+    padding-left: 50px;
+}
