@@ -109,7 +109,7 @@
     text-align: center;
 }
 .container .item .bi{
-    font-size: 30px;
+    font-size: 35px;
     color: #FCBF49;
     text-align: center;
     padding:10px;
@@ -143,8 +143,17 @@
 }
 
 .ProvideUs .list{
-    width:1000px;
-    margin:100px;
+    width:800px;
+    margin:auto;
+    padding:10px;
+}
+.ProvideUs .list .circle{
+    display:flex;
+}
+.ProvideUs .list .circle i{
+    margin:20px;
+    font-size: 25px;
+    color: #F24E1E;
 }
 
 
@@ -306,7 +315,11 @@
     display:flex;
     justify-content: space-around;
     padding: 50px;
-    background-color: #eaeaea;
+    background-color: #faf7f2;
+}
+.detail h2{
+    font-size: 30px;
+    text-align: center;
 }
 .detail .infos{
     text-align: justify;
@@ -320,3 +333,53 @@
 
 }
 
+/* courses */
+
+.courses {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px;
+    padding: 30px;
+}
+.course .text{
+    color: #251F55;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:50px;
+    margin:50px;
+}
+.courses .best img{
+    width:500px;
+}
+.courses .best .learn{
+    background:#faf7f2;
+    border-radius: 10px;
+    margin:20px;
+    width:500px;
+}
+.courses .best .learn-img {
+    display:flex;
+    background: #342C77;
+    text-align: left;
+    padding:20px;
+    color:#fff;
+    border-radius: 10px;
+}
+.courses .best .learn-img i{
+    padding-right:20px;
+    font-size:30px;
+}
+.courses .best .learn-img h2{
+    font-size: 25px;
+}
+.courses .best .learn-info ul{
+    padding:10px 20px;
+    margin:20px;
+}
+
+.courses .best .learn-info ul li{
+    font-size: 20px;
+    padding:10px;
+}
