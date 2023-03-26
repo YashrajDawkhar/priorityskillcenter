@@ -1,6 +1,6 @@
 .contact{
     display: flex;
-    background: #f2f2f2;
+    background: #faf7f2;
     height: 90vh;
     justify-content: space-around;
     align-items: center;
@@ -16,17 +16,22 @@
      background: #ffff;
      padding:30px;
      margin:20px;
+     box-shadow: 5px 4px 10px #a09e9e;
 }
 .box h2{
     text-align: center;
     padding: 10px;
     border-bottom:3px solid #251F55;
 }
+form{
+    padding:10px;
+}
 .content{
     width:300px;
     padding:10px;
     margin:10px;
     border: 1px solid #eaeaea;
+    border-radius: 5px;
 }
 
 .btn{
@@ -35,6 +40,7 @@
     color:#ffff;
     padding:10px;
     margin:10px;
-    border:1px solid #251F55
+    border:1px solid #251F55;
+    box-shadow: 5px 4px 10px #a09e9e;
 }
 
