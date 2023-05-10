@@ -7,7 +7,7 @@ import { Injectable } from '@angular/core';
 export class BackendService {
 
   // API = "http://localhost:4000"
-  API = "https://prioritycenter.vercel.app" 
+  API = "https://priority-backend.vercel.app" 
 
   constructor(private http:HttpClient) { }
 
