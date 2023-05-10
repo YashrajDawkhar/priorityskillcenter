@@ -9,11 +9,11 @@
 }
 
 #card {
-  width: 80%;
+  width: 90%;
   height: fit-content;
   background-color: white;
-  border-radius: 15px;
-  margin-bottom: 20px;
+  border-radius: 2px;
+  margin-bottom: 30px;
   display: flex;
   padding: 35px;
 }
