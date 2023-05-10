@@ -9,7 +9,7 @@
     padding: 20px;
     color: white;
     padding: 10px;
-    font: message-box;
+    font: message-box; 
 
     h1 {
       font-size: 55px;
@@ -27,6 +27,11 @@
       color: #ffff;
       padding: 10px;
       max-width: 700px;
+      text-align: justify;
+    }
+    hr{
+      margin:10px;
+      width:500px
     }
 
     .btn {
@@ -49,6 +54,7 @@
       #head {
         font-size: 36px;
         font-weight: 700;
+        
       }
     }
   }

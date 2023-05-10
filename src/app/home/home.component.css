@@ -109,7 +109,7 @@
     text-align: center;
 }
 .container .item .bi{
-    font-size: 30px;
+    font-size: 35px;
     color: #FCBF49;
     text-align: center;
     padding:10px;
@@ -143,8 +143,17 @@
 }
 
 .ProvideUs .list{
-    width:1000px;
-    margin:100px;
+    width:800px;
+    margin:auto;
+    padding:10px;
+}
+.ProvideUs .list .circle{
+    display:flex;
+}
+.ProvideUs .list .circle i{
+    margin:20px;
+    font-size: 25px;
+    color: #F24E1E;
 }
 
 
@@ -158,7 +167,7 @@
 
 
 /* reiew section */
-.student h2{
+/* .student h2{
     color: #251F55;
     font-size: 40px;
     text-align: center;
@@ -202,6 +211,51 @@
 .review .box1 .info p{
     font-size: 20px;
     padding:20px
+} */
+
+.student .box1 h2{
+    width:180px;
+    color: #251F55;
+    font-size: 20px;
+    text-transform: uppercase;
+    padding:10px 30px;
+    background-color: #fff;
+}
+.student .desc{
+    background-color: #251F55;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:350px;
+}
+.student .desc .box1{
+    margin:50px;
+    width:500px;
+    border-left: 2px solid #ffff
+
+}
+.student .desc .box1 h3{
+    font-size: 35px;
+    color:#fff;
+    padding:10px 30px;
+}
+.student .desc p{
+    color:#fff;
+    font-size: 15px;
+    align-items: center;
+    padding:10px 30px;
+}
+.student .desc .box2{
+    background: #fff;
+    width:300px;
+    height:360px;
+    padding:5px 0px 0px 20px ;
+}
+.student .desc img{
+    width:275px;
+    height:350px;
+    border-radius: 10px;
+
 }
 
 /* company section */
@@ -242,8 +296,10 @@
 .placement .offer .box2{
     width:110px;
     height: 120px;
-    border:2px solid #251F55;padding:10px;
+    border:2px solid #251F55;
+    padding:10px;
     margin: 10px 80px;
+    box-shadow: 5px 4px 10px #a09e9e;
 }
 
 .placement .offer .box2 .bi{
@@ -261,7 +317,11 @@
     display:flex;
     justify-content: space-around;
     padding: 50px;
-    background-color: #eaeaea;
+    background-color: #faf7f2;
+}
+.detail h2{
+    font-size: 30px;
+    text-align: center;
 }
 .detail .infos{
     text-align: justify;
@@ -275,3 +335,55 @@
 
 }
 
+/* courses */
+
+.courses {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:30px;
+    padding: 30px;
+}
+.course .text{
+    color: #251F55;
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top:50px;
+    margin:50px;
+}
+.courses .best img{
+    width:500px;
+}
+.courses .best .learn{
+    background:#faf7f2;
+    border-radius: 10px;
+    margin:20px;
+    width:500px;
+    box-shadow: 5px 4px 10px #a09e9e;
+}
+.courses .best .learn-img {
+    display:flex;
+    background: #342C77;
+    text-align: left;
+    padding:20px;
+    color:#fff;
+    border-radius: 10px;
+    box-shadow: 5px 4px 10px #a09e9e;
+}
+.courses .best .learn-img i{
+    padding-right:20px;
+    font-size:30px;
+}
+.courses .best .learn-img h2{
+    font-size: 25px;
+}
+.courses .best .learn-info ul{
+    padding:10px 20px;
+    margin:20px;
+}
+
+.courses .best .learn-info ul li{
+    font-size: 20px;
+    padding:10px;
+}

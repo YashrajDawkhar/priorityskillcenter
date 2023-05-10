@@ -33,3 +33,14 @@ ul,
 li {
   cursor: pointer;
 }
+.box4 p{
+  text-align: center;
+}
+
+.box4 .icon{
+  padding:10px
+}
+.box4 .icon .bi{
+  margin:5px;
+  font-size: 30px;
+}
