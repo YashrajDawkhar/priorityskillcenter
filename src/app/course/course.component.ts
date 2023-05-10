@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input, OnInit, computed, effect, signal } from '@angular/core';
 import { BackendService } from '../backend.service';
 import { ActivatedRoute } from '@angular/router';
 
@@ -7,26 +7,28 @@ import { ActivatedRoute } from '@angular/router';
   templateUrl: './course.component.html',
   styleUrls: ['./course.component.css']
 })
-export class CourseComponent {
+export class CourseComponent implements OnInit {
 
-
-  data: any = []
-  type:string =''
-
-
-  constructor(private backend: BackendService, private activated: ActivatedRoute) {
-    activated.queryParams.subscribe((query: any) => {
-      backend.getCourse().subscribe((d: any) => {
-        this.data = d[query.type]
-        this.type = query.type
-      })
-    })
+  @Input('type') set updateType(value: string) {
+    this.type.set(value)
   }
 
+  type = signal<string>('');
+  courses = signal<Array<any>>([])
 
-  getImage(img:any){
+  constructor(private backend: BackendService, private activated: ActivatedRoute) { }
+
+  ngOnInit(): void { }
+
+  getImage(img: any) {
     return `https://docs.google.com/uc?id=${img}`
   }
+
+  call_If_Type_Change = effect(() => {
+    this.backend.getCourseList(this.type()).subscribe((data: any) => {
+      this.courses.update(q => data.courses);
+    })
+  })
 
 
 }

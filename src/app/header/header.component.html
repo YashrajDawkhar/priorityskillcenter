@@ -2,16 +2,16 @@
     <div class="btn" routerLink="/home">
         Home
     </div>
-    <div class="btn" routerLink="/course" [queryParams]="{type:'Trending'}">
+    <div class="btn" [routerLink]='["course","Trending"]'>
         Trending Course
     </div>
-    <div class="btn" routerLink="/course" [queryParams]="{type:'IT'}">
+    <div class="btn" [routerLink]='["course","IT"]'>
         IT Course
     </div>
-    <div class="btn" routerLink="/course" [queryParams]="{type:'CAD'}">
+    <div class="btn" [routerLink]='["course","CAD"]'>
         CAD Design Courses
     </div>
-    <div class="btn" routerLink="/course" [queryParams]="{type:'Language'}">
+    <div class="btn" [routerLink]='["course","Language"]'>
         Languages
     </div>
     <div class="btn" routerLink="/contact">

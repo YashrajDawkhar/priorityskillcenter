@@ -1,6 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input, effect, signal } from '@angular/core';
 import { BackendService } from '../backend.service';
-import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-detail',
@@ -9,21 +8,37 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class DetailComponent {
 
-  data: any = []
-
-  constructor(private backend: BackendService, private activated: ActivatedRoute) {
-    activated.queryParams.subscribe((query: any) => {
-      backend.getCourse().subscribe((d: any) => {
-        this.data = d[query.type][query.id]
-        console.log(this.data);
-      })
-    })
+  @Input('type') set fromURL_Type(value: string) {
+    this.type.set(value)
   }
 
-  getImage(img: any):any {
+  @Input('index') set fromURL_Index(value: number) {
+    this.index.set(value)
+  }
+
+  type = signal<string>('');
+  index = signal<number>(0);
+  detail:any = signal({})
+
+  constructor(private backend: BackendService) { }
+
+  getImage(img: any): any {
     if (img) {
       return `https://docs.google.com/uc?id=${img}`
     }
   }
+
+  get_detail = effect(()=>{
+
+    this.backend.getDetail(this.type(),this.index()).subscribe((data:any)=>{
+
+      console.log(data);
+
+      this.detail.update(()=> data)
+      
+
+    })
+
+  })
 
 }

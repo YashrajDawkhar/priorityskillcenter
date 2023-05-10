@@ -6,15 +6,22 @@ import { Injectable } from '@angular/core';
 })
 export class BackendService {
 
-  API = "http://localhost:3000"
+  // API = "http://localhost:4000"
+  API = "https://prioritycenter.vercel.app" 
 
   constructor(private http:HttpClient) { }
 
-  getCourse(){
-    return this.http.get(`${this.API}/courses`)
+
+  getCourseList(courseName:string){
+    return this.http.get(`${this.API}/course/${courseName}`)
   }
 
-
-
+  getDetail(courseName:string,index:number){
+    return this.http.get(`${this.API}/course/${courseName}/${index}`)
+  }
 
 }
+
+
+
+

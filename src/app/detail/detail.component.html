@@ -1,9 +1,11 @@
-<div class="outer" *ngIf="data">
+
+
+<div class="outer">
 
     <div class="home">
         <div class="content">
-            <h1>{{data.title | uppercase}}</h1>
-            <p>{{data.desc | titlecase}}</p>
+            <h1>{{detail().title | uppercase}}</h1>
+            <p>{{detail().desc | titlecase}}</p>
             <hr>
             <div>
                 <button class="btn" style="background-color: #FB4C19;color: white;">Enrol Know</button>
@@ -14,7 +16,7 @@
 
                 <span>
                     <div id="head">
-                        {{data?.detail?.student_enrol}} +
+                        {{detail()?.detail?.student_enrol}} +
                     </div>
                     <div>
                         Student Enrol
@@ -22,7 +24,7 @@
                 </span>
                 <span>
                     <div id="head">
-                        {{data?.detail?.problem}} +
+                        {{detail()?.detail?.problem}} +
                     </div>
                     <div>
                         Problems
@@ -30,7 +32,7 @@
                 </span>
                 <span>
                     <div id="head">
-                        {{data?.detail?.month}}
+                        {{detail()?.detail?.month}}
                     </div>
                     <div>
                         Months
@@ -38,7 +40,7 @@
                 </span>
                 <span>
                     <div id="head">
-                        {{data?.detail?.hour}} +
+                        {{detail()?.detail?.hour}} +
                     </div>
                     <div>
                         Hours of Videos
@@ -49,15 +51,15 @@
 
         </div>
         <div class="img">
-            <img [src]="getImage(data.img)" alt="">
+            <img [src]="getImage(detail().img)" alt="">
         </div>
     </div>
 
     <div class="learn">
 
-        <h2>WHY SHOULD I LEARN {{data.title | uppercase}} </h2>
+        <h2>WHY SHOULD I LEARN {{detail().title | uppercase}} </h2>
 
-        <ng-container *ngFor="let i of data.detail?.learn">
+        <ng-container *ngFor="let i of detail().detail?.learn">
 
             <ul>
                 <li>
@@ -76,7 +78,7 @@
             COURSE CURRICULUM
         </div>
 
-        <ng-container *ngFor="let i of data?.detail?.curriculum">
+        <ng-container *ngFor="let i of detail()?.detail?.curriculum">
 
             <div class="box">
                 {{i}}
@@ -94,7 +96,7 @@
 
         <div class="outer-box">
 
-            <div class="box" *ngFor="let i of data?.detail?.faculty">
+            <div class="box" *ngFor="let i of detail()?.detail?.faculty">
                 <img [src]="getImage(i.img)" height="200px" width="200px">
                 <div style="position: absolute;bottom: 0;text-align: center;width: 100%;">{{i?.name}}</div>
             </div>
@@ -103,4 +105,4 @@
 
     </div>
 
-</div>
+</div> 
