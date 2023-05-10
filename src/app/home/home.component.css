@@ -164,55 +164,6 @@
     margin:20px;
 }
 
-
-
-/* reiew section */
-/* .student h2{
-    color: #251F55;
-    font-size: 40px;
-    text-align: center;
-    text-transform: uppercase;
-    padding-top:50px;
-}
-.review{
-    display: flex;
-    justify-content: space-evenly;
-    padding:30px;
-}
-
-.review .box1{
-    border:1px solid #FCBF49;
-    margin:30px;
-    height:300px;
-}
-.review .box1 .star{
-    align-items: center;
-    margin:20px;
-}
-.review .box1 .star .bi{
-    margin:5px 5px 5px 0px;
-    color:#FCBF49;
-    font-size: 20px;
-}
-.review .box1 .description{
-    margin:20px;
-}
-.review .box1 .info{
-    background: #FCBF49;
-    padding:20px;
-    display: flex;
-    justify-content: space-between;
-}
-.review .box1 .info img{
-    width:100px;
-    height: 100px;
-    border-radius: 50%;
-}
-.review .box1 .info p{
-    font-size: 20px;
-    padding:20px
-} */
-
 .student .box1 h2{
     width:180px;
     color: #251F55;
@@ -254,8 +205,6 @@
 .student .desc img{
     width:275px;
     height:350px;
-    border-radius: 10px;
-
 }
 
 /* company section */
@@ -270,18 +219,24 @@
 .company .logo{
     padding:20px;
     margin:30px;
+    display: flex;
+    justify-content: center;
 }
 .company .logo img{
     padding:20px;
 }
 
 /* placement section */
+
+.placement{
+    padding:90px 0;
+}
+
 .placement h2{
     color: #F24E1E;
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top:50px;
 }
 
 .placement .offer{
@@ -290,16 +245,15 @@
     flex-wrap: wrap;
     align-items: center;
     text-align: center;
-    margin:30px;
+    margin: 52px 35px;
 }
 
 .placement .offer .box2{
-    width:110px;
+    width: 110px;
     height: 120px;
-    border:2px solid #251F55;
-    padding:10px;
-    margin: 10px 80px;
-    box-shadow: 5px 4px 10px #a09e9e;
+    border: 2px solid #ededed;
+    padding: 10px;
+    color: #575757;
 }
 
 .placement .offer .box2 .bi{
@@ -328,6 +282,7 @@
     padding:20px;
     margin-top:80px;
     width:500px;
+    font-size: 17px;
 }
 .detail .infos ul li{
     list-style: none;
@@ -356,11 +311,11 @@
     width:500px;
 }
 .courses .best .learn{
-    background:#faf7f2;
+    background: #faf7f2;
     border-radius: 10px;
-    margin:20px;
-    width:500px;
-    box-shadow: 5px 4px 10px #a09e9e;
+    margin: 20px;
+    width: 500px;
+    box-shadow: 7px 6px 9px 0px #eaeaea;
 }
 .courses .best .learn-img {
     display:flex;
