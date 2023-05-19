@@ -6,16 +6,16 @@
     <div class="container">
         <div class="box">
             <h2>Contact Form</h2>
-            <form action="">
-                <input type="text" name="userName" placeholder="Name" class="content">
+            <form [formGroup]="contact" (ngSubmit)="save()">
+                <input type="text" name="userName" placeholder="Name" class="content" formControlName="Name">
                 <br>
-                <input type="email" name="email" placeholder="Email" class="content">
+                <input type="email" name="email" placeholder="Email" class="content" formControlName="Email">
                 <br>
-                <input type="text" name="subject" placeholder="Subject" class="content">
+                <input type="text" name="subject" placeholder="Subject" class="content" formControlName="Subject">
                 <br>
-                <textarea name="msg" id="msg" cols="10" rows="5" placeholder="our Message" class="content"></textarea>
+                <textarea name="msg" id="msg" cols="10" rows="5" placeholder="our Message" class="content" formControlName="Message"></textarea>
                 <br>
-                <button class="btn">Submit</button>
+                <button class="btn" type="submit">Submit</button>
             </form>
         </div>
     </div>
