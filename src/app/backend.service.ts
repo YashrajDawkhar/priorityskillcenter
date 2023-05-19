@@ -6,8 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class BackendService {
 
-  API = "http://localhost:4000"
-  // API = "https://api.priorityskillcenter.tech"
+  //API = "http://localhost:4000"
+  API = "https://api.priorityskillcenter.tech"
 
   constructor(private http: HttpClient) { }
 
