@@ -36,9 +36,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    bindToComponentInputs: true,
-    initialNavigation: 'enabledBlocking'
-})],
+    bindToComponentInputs: true
+  })],
   exports: [RouterModule],
 })
 export class AppRoutingModule { }
