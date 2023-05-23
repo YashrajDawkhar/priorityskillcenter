@@ -109,13 +109,17 @@
 }
 
 .faculty {
+
+  padding: 40px 0;
+
   #title {
     display: flex;
     justify-content: center;
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
     color: #424242;
     text-transform: uppercase;
+    margin-bottom:36px;
   }
 
   .outer-box {
@@ -124,11 +128,25 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
+    img{
+      background: #f3f3f3;
+    }
+
     .box {
       height: 240px;
       width: 200px;
       margin-right: 20px;
       position: relative;
+      border: 1px solid #e0e0e0;
+
+      .name{
+        position: absolute;
+        bottom: 8px;
+        text-align: center;
+        width: 100%;
+        font-weight: 600;
+        color: #251f55;
+      }
     }
   }
 }

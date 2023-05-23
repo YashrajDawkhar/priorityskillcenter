@@ -99,7 +99,7 @@
 
             <div class="box" *ngFor="let i of detail()?.detail?.faculty">
                 <img [src]="getImage(i.img)" height="200px" width="200px">
-                <div style="position: absolute;bottom: 0;text-align: center;width: 100%;">{{i?.name}}</div>
+                <div class="name">{{i?.name}}</div>
             </div>
 
         </div>
