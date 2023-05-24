@@ -3,7 +3,7 @@
     <div id="card" *ngFor="let d of courses() ;index as i">
 
         <div class="img">
-            <img [src]="getImage(d.img)" height="270px">
+            <img [src]="d.img" height="270px" id="image">
         </div>
         <div class="detail">
 

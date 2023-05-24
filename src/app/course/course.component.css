@@ -20,6 +20,8 @@
 
 .img {
   width: 290px;
+  max-height: 247px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -60,5 +62,11 @@
 
 img {
   max-width: 250px;
+  height: fit-content;
+}
+
+#image {
+  max-width: 250px;
+  margin: auto;
   height: fit-content;
 }

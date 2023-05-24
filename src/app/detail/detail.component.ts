@@ -24,7 +24,7 @@ export class DetailComponent {
 
   getImage(img: any): any {
     if (img) {
-      return `https://docs.google.com/uc?id=${img}`
+      return img
     }
   }
 

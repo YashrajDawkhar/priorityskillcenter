@@ -20,9 +20,7 @@ export class CourseComponent implements OnInit {
 
   ngOnInit(): void { }
 
-  getImage(img: any) {
-    return `https://docs.google.com/uc?id=${img}`
-  }
+
 
   call_If_Type_Change = effect(() => {
     this.backend.getCourseList(this.type()).subscribe((data: any) => {
