@@ -42,5 +42,6 @@ form{
     margin:10px;
     border:1px solid #251F55;
     box-shadow: 5px 4px 10px #a09e9e;
+    cursor: pointer;
 }
 

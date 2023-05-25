@@ -23,8 +23,7 @@ export class ContactusComponent {
   
 
     this.backend.saveContactInfo(this.contact.value).subscribe((d)=>{
-      console.log(d);
-      
+      this.contact.reset();
     })
 
 
