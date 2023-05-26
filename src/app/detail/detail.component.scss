@@ -150,3 +150,44 @@
     }
   }
 }
+
+
+.offer{
+
+  padding: 40px 0;
+
+    #title{
+        text-align: center;
+        color: #f24e1e;
+        font-size: 40px;
+        font-weight: 500;
+    }
+    .detail{
+        display:flex;
+        justify-content: space-around;
+        padding: 20px;
+        
+        .infos{
+          text-align: justify;
+          padding:20px;
+          margin-top:50px;
+
+          .circle{
+            display:flex;
+            padding:10px;
+
+            i{
+              margin:20px;
+              font-size: 25px;
+              color: #FFC700;
+            }
+
+            p{
+              font-size:24px;
+              margin:20px;
+            }
+
+          }
+        }
+    }
+}
