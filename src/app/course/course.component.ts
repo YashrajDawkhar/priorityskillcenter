@@ -16,6 +16,7 @@ export class CourseComponent implements OnInit {
   type = signal<string>('');
   courses = signal<Array<any>>([])
 
+
   constructor(private backend: BackendService, private activated: ActivatedRoute) { }
 
   ngOnInit(): void { }

@@ -36,7 +36,8 @@ const routes: Routes = [
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
-    bindToComponentInputs: true
+    bindToComponentInputs: true,
+    scrollPositionRestoration: 'enabled',
   })],
   exports: [RouterModule],
 })

@@ -6,8 +6,12 @@
             <p>{{detail().desc | titlecase}}</p>
             <hr>
             <div>
-                <button class="btn" style="background-color: #FB4C19;color: white;">Enrol Know</button>
-                <button class="btn" style="background-color: white;color: #FB4C19;">Try For Free</button>
+                <button class="btn" style="background-color: #FB4C19;color: white;"
+                    (click)="dialog_display=true;this.contact.get('Message')?.patchValue('Enrol Know For ' + detail().title )">Enrol
+                    Know</button>
+                <button class="btn" style="background-color: white;color: #FB4C19;"
+                    (click)="dialog_display=true;this.contact.get('Message')?.patchValue('Try For Free Course Name is => ' + detail().title )">Try For
+                    Free</button>
             </div>
 
             <div id="intro">
@@ -56,7 +60,7 @@
     <div class="learn">
 
         <h2>WHY SHOULD I LEARN {{detail().title | uppercase}} </h2>
-        
+
         <div style="margin-top: 10px;">
 
             <ng-container *ngFor="let i of detail().detail?.learn">
@@ -107,3 +111,23 @@
     </div>
 
 </div>
+
+
+
+<p-dialog header="Contact Form" [(visible)]="dialog_display" [modal]="true" [style]="{ width: '50vw' }"
+    [draggable]="false" [resizable]="false">
+
+    <form style="margin-top: 10px;" [formGroup]="contact" (ngSubmit)="save()">
+
+        <input type="text" pInputText style="width: 100%;" placeholder="Name" formControlName="Name">
+        <input type="text" pInputText style="width: 100%;margin-top: 10px;" placeholder="Email"
+            formControlName="Email" />
+        <input type="text" pInputText style="width: 100%;margin-top: 10px;" placeholder="Phone"
+            formControlName="Subject" />
+
+        <button pButton type="submit" label="Submit" class="p-button-outlined"
+            style="width: 100%;margin-top: 10px;"></button>
+
+    </form>
+
+</p-dialog>

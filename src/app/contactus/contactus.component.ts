@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { BackendService } from '../backend.service';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-contactus',
@@ -10,22 +10,26 @@ import { FormBuilder } from '@angular/forms';
 export class ContactusComponent {
 
 
-  constructor(private backend:BackendService,private fb:FormBuilder){}
+  constructor(private backend: BackendService, private fb: FormBuilder) { }
 
-  contact = this.fb.group({
-    Name:[''],
-    Email:[''],
-    Subject:[''],
-    Message:['']
+  contact: FormGroup = this.fb.group({
+    Name: ['', Validators.required],
+    Email: ['', Validators.required],
+    Subject: ['', Validators.required],
+    Message: ['']
   })
 
-  save(){
-  
+  save() {
 
-    this.backend.saveContactInfo(this.contact.value).subscribe((d)=>{
-      this.contact.reset();
-    })
+    Object.keys(this.contact.controls).forEach(key => {
+      this.contact.controls[key].markAsDirty();
+    });
 
+    if(this.contact.valid){
+      this.backend.saveContactInfo(this.contact.value).subscribe((d) => {
+        this.contact.reset();
+      })
+    }
 
   }
 
