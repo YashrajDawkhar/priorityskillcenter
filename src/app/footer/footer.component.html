@@ -5,10 +5,10 @@
     <div class="box2">
         <ul>
             <li routerLink="/home">Home</li>
-            <li routerLink="/course" [queryParams]="{type:'Trending'}">Trending Courses</li>
-            <li routerLink="/course" [queryParams]="{type:'IT'}">IT Courses</li>
-            <li routerLink="/course" [queryParams]="{type:'CAD'}">CAD Design Courses</li>
-            <li routerLink="/course" [queryParams]="{type:'Language'}">Languages</li>
+            <li [routerLink]='["course","Latest_technologies"]' > Latest technologies </li>
+            <li [routerLink]='["course","IT"]' >IT Courses</li>
+            <li [routerLink]='["course","CAD"]' >CAD Design Courses</li>
+            <li [routerLink]='["course","Language"]' >Languages</li>
             <li routerLink="/contact">Contact Us</li>
         </ul>
     </div>
