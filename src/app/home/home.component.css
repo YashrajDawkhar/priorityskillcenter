@@ -17,7 +17,7 @@
 .content h2{
     font-size:25px;
     padding:10px;
-    color:#FCBF49
+    color:#FCBF49;
 }
 
 .content p{
@@ -29,34 +29,33 @@
 .content .btn{
     width:150px;
     height:50px;
-    margin:10px;
-    background-color: #FCBF49;
-    text-transform: uppercase;
+    display: block;
+    margin:20px 10px;
+    padding:10px ;
+    text-align: center;
+    text-decoration: none;
+    background-color: #FFC700;
     border-radius: 10px;
-    border:1px solid #342C77
+    border:1px solid #FFC700;
+    cursor: pointer;
 }
 
-.content .btn:hover{
-    background:#efe772;
-    color:#375684;
-    
-}
 
 
 /* skill section */
 
 .box{
     display:flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     background:#251F55;
-    width:595px;
-    height:100px;
-    padding:10px 100px;
+    width:750px;
+    height:150px;
+    padding:10px;
     border-radius: 20px;
     position: absolute;
-    left: 200px;
-    top: 550px;
+    left:300px;
+    top: 510px;
 }
 
 .box .skill{
@@ -64,8 +63,11 @@
 }
 
 .box .skill h2{
-    font-size: 45px;
-    
+    text-align: center;
+    font-size: 35px;
+}
+.box .skill p{
+    font-size: 20px;
 }
 
 /* ---------About Us--------- */
@@ -164,12 +166,13 @@
     margin:20px;
 }
 
+/* student section */
 .student .box1 h2{
-    width:180px;
+    width:200px;
     color: #251F55;
     font-size: 20px;
     text-transform: uppercase;
-    padding:10px 30px;
+    padding:10px;
     background-color: #fff;
 }
 .student .desc{
@@ -186,13 +189,13 @@
 
 }
 .student .desc .box1 h3{
-    font-size: 35px;
+    font-size: 30px;
     color:#fff;
-    padding:10px 30px;
+    padding:10px 20px;
 }
 .student .desc p{
     color:#fff;
-    font-size: 15px;
+    font-size: 18px;
     align-items: center;
     padding:10px 30px;
 }
@@ -200,10 +203,10 @@
     background: #fff;
     width:300px;
     height:360px;
-    padding:5px 0px 0px 20px ;
+    padding:5px 20px ;
 }
 .student .desc img{
-    width:275px;
+    /* width:270px; */
     height:350px;
 }
 
@@ -249,11 +252,10 @@
 }
 
 .placement .offer .box2{
-    width: 110px;
-    height: 120px;
+    width: 115px;
     border: 2px solid #ededed;
     padding: 10px;
-    color: #575757;
+    color: #251F55;
 }
 
 .placement .offer .box2 .bi{
@@ -273,22 +275,23 @@
     padding: 50px;
     background-color: #faf7f2;
 }
-.detail h2{
-    font-size: 30px;
-    text-align: center;
-}
-.detail .infos{
-    text-align: justify;
-    padding:20px;
-    margin-top:80px;
-    width:500px;
-    font-size: 17px;
-}
-.detail .infos ul li{
-    list-style: none;
-    padding:20px;
 
+
+.detail .infos .circle{
+    display:flex;
+    padding:10px;
+    margin:0 10px;
 }
+.detail .infos .circle   i{
+      margin:20px;
+      font-size: 25px;
+      color: #FFC700;
+    }
+
+.detail .infos .circle   p{
+      font-size:20px;
+      margin:20px ;
+    }
 
 /* courses */
 
@@ -296,7 +299,7 @@
     display:flex;
     justify-content: space-between;
     align-items: center;
-    margin:30px;
+    margin:40px;
     padding: 30px;
 }
 .course .text{
@@ -304,7 +307,7 @@
     font-size: 40px;
     text-align: center;
     text-transform: uppercase;
-    padding-top:50px;
+    padding-top:80px;
     margin:50px;
 }
 .courses .best img{
